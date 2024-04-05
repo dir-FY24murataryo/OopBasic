@@ -34,6 +34,17 @@ public class ObjectSample {
             // developSoftwareメソッドを呼び出す
             ((Engineer) projectManager).developSoftware();
         }
+        
+        System.out.println("");
+
+        // アルバイトインスタンスの作成
+        var parttimeWorker = new ParttimeWorker("太田", department);
+        
+        // 実装したメソッドの呼び出し
+        ((Workable) employee).work();
+        ((Workable) engineer).work();
+        ((Workable) projectManager).work();
+        ((Workable) parttimeWorker).work();
     }
 
 
